@@ -2,11 +2,6 @@
 
 Restate 是一个可以实现状态共享的 react hooks。
 
-## Install
-
-* `npm install restate --save` or
-* `yarn add reactn`
-
 ## 特性
 
 * 通过调用一个 hooks 函数就可以在 `Function Component` 之间共享`state`，不需要 connect 等高阶组件的包裹。
