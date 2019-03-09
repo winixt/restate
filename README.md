@@ -12,6 +12,7 @@ Restate 是一个可以实现状态共享的 react hooks。
 * 通过调用一个 hooks 函数就可以在 `Function Component` 之间共享`state`，不需要 connect 等高阶组件的包裹。
 * 鼓励代码模块化，每一份数据有属于它的模块，不与其他数据混淆
 * 统一数据处理，遵循 redux 思想
+* 轻量
 
 ## 用法
 
