@@ -12,8 +12,12 @@ function createShareStateHook(initState) {
             return () => {
                 globState.removeListener(initState, forceUpdate)
             }
-        }, [forceUpdate])
-        return [state, reducers, effects];
+        }, [forceUpdate]);
+        return {
+            state,
+            reducers,
+            effects
+        };
     }
 }
 

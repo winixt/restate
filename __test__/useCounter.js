@@ -1,4 +1,4 @@
-import createShareStateHook from './createShareStateHook';
+import createShareStateHook from '../src/createShareStateHook';
 
 const count = {
     state: {
@@ -23,7 +23,6 @@ const count = {
                 })
             }));
             this.changeName(result.name);
-            // console.log(result);
         }
     }
 };
