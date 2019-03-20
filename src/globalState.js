@@ -4,6 +4,7 @@ export default class GlobalState {
     }
 
     initShareState(initState) {
+        // TODO 检测 initState 的合法性
         const _stateMap = this._stateMap;
         if (_stateMap.has(initState)) {
             const map = _stateMap.get(initState);
@@ -59,7 +60,7 @@ export default class GlobalState {
             const map = this._stateMap.get(stateId);
             map.listeners.delete(listener)
             map.count--;
-            if (map.count === 0) {
+            if (map.count <= 0) {
                 this._stateMap.delete(stateId);
             }
         }
